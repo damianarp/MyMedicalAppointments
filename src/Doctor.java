@@ -1,24 +1,31 @@
-// Creamos la clase Doctor y sus atributos.
+// Creamos la clase Doctor con sus atributos y métodos.
 public class Doctor {
-    int id;
+    static int id = 0; // Debe ser static para poder llevar el control del Autoincrement. La inicializamos en 0 y la hacemos incrementable en el Constructor.
     String name;
     String speciality;
 
     // Método Constructor
     /**
-     * Imprime el nombre del Doctor asignado
-     * @param name Nombre del Doctor.
+     * Incrementa el id.
      * */
-    Doctor(String name) {
-        System.out.println("El nombre del Doctor asignado es: " + name);
+    Doctor() {
+        id++; // Incrementamos el id.
     }
 
-    // Comportamientos
+    // Métodos
     /**
      * Descripción: Imprime el nombre del Doctor
      * @return void
      * */
     public void showName(){
-        System.out.println("Name: " + name);
+        System.out.println("Name Doctor: " + name);
+    }
+
+    /**
+     * Descripción: Imprime el ID del Doctor
+     * @return void
+     * */
+    public void showId(){
+        System.out.println("ID Doctor: " + id);
     }
 }
