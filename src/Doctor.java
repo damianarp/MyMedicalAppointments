@@ -4,6 +4,15 @@ public class Doctor {
     String name;
     String speciality;
 
+    // Método Constructor
+    /**
+     * Imprime el nombre del Doctor asignado
+     * @param name Nombre del Doctor.
+     * */
+    Doctor(String name) {
+        System.out.println("El nombre del Doctor asignado es: " + name);
+    }
+
     // Comportamientos
     /**
      * Descripción: Imprime el nombre del Doctor

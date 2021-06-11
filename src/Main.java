@@ -5,14 +5,14 @@ public class Main {
         // Declaramos e instanciamos un objeto de la clase Doctor.
         // Primero, tipo de objeto (nombre de la clase a la cual pertenece el objeto).
         // Segundo, nombre del objeto.
-        // Instanciamos usando el keyword new + nombre de la clase seguido de parentesis.
-        Doctor myDoctor = new Doctor();
+        // Instanciamos usando el keyword new + Método Constructor, con el valor de su parámetro.
+        Doctor myDoctor = new Doctor("Alejandro López");
 
-        //Le asignamos un nombre al doctor.
+        // Le asignamos un nombre al doctor.
         // Accedemos al nombre a traves del atributo.
         myDoctor.name = "Alejandro López";
 
-        //Mostramos el nombre a través del método creado en la clase Doctor.
+        // Mostramos el nombre a través del método creado en la clase Doctor.
         myDoctor.showName(); // Name: Alejandro López
     }
 }
